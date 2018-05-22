@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.skyfree.flashalert.activity.NotificationList">
+    
+    <RelativeLayout
+        android:background="@color/color_bg_title_notification_access"
+        android:gravity="center_vertical"
+        android:padding="@dimen/muoi_dp"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_back"
+            android:layout_width="@dimen/hai_muoi_dp"
+            android:layout_height="@dimen/hai_muoi_dp" />
+
+        <TextView
+            android:textSize="@dimen/muoi_lam_sp"
+            android:textColor="#484848"
+            android:textStyle="bold"
+            android:text="@string/notification_access"
+            android:layout_toRightOf="@id/img_back"
+            android:layout_marginLeft="@dimen/muoi_dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_app"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+</LinearLayout>

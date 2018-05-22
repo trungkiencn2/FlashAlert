@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.skyfree.flashalert.activity.MainActivity">
+
+    <ScrollView
+        android:background="@color/color_bg_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:background="@color/color_bg_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/nam_sau_dp">
+
+                <ImageView
+                    android:id="@+id/img_option"
+                    android:layout_marginLeft="@dimen/muoi_lam_dp"
+                    android:layout_marginBottom="@dimen/muoi_dp"
+                    android:layout_marginTop="@dimen/muoi_dp"
+                    android:layout_marginRight="@dimen/muoi_lam_dp"
+                    android:src="@drawable/ic_option"
+                    android:layout_width="@dimen/ba_muoi_dp"
+                    android:layout_height="@dimen/ba_muoi_dp" />
+                
+                <TextView
+                    android:textSize="@dimen/muoi_hai_sp"
+                    android:text="@string/app_name"
+                    android:layout_toRightOf="@+id/img_option"
+                    android:textColor="@color/color_title"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+                <Switch
+                    android:layout_marginBottom="@dimen/nam_dp"
+                    android:layout_marginTop="@dimen/nam_dp"
+                    android:layout_marginRight="@dimen/muoi_dp"
+                    android:background="@drawable/custom_switch"
+                    android:thumb="@null"
+                    android:track="@null"
+                    android:id="@+id/sw_flash_alerts"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="@dimen/bon_muoi_dp"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:background="@color/color_divide_head"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"></LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bon_lam_dp">
+
+                <ImageView
+                    android:id="@+id/img_incoming_call"
+                    android:layout_marginLeft="@dimen/hai_muoi_dp"
+                    android:layout_marginBottom="@dimen/muoi_dp"
+                    android:layout_marginTop="@dimen/muoi_dp"
+                    android:layout_marginRight="@dimen/muoi_lam_dp"
+                    android:src="@drawable/ic_call"
+                    android:layout_width="@dimen/hai_muoi_dp"
+                    android:layout_height="@dimen/hai_muoi_dp" />
+
+                <TextView
+                    android:textSize="@dimen/muoi_hai_sp"
+                    android:text="@string/incoming_call"
+                    android:layout_toRightOf="@+id/img_incoming_call"
+                    android:textColor="@color/color_title"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+                <Switch
+                    android:layout_marginBottom="@dimen/nam_dp"
+                    android:layout_marginTop="@dimen/nam_dp"
+                    android:layout_marginRight="@dimen/muoi_lam_dp"
+                    android:background="@drawable/custom_switch"
+                    android:thumb="@null"
+                    android:track="@null"
+                    android:id="@+id/sw_incoming_call"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="@dimen/ba_lam_dp"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+            
+            <LinearLayout
+                android:background="@color/color_divide_content"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"></LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bon_lam_dp">
+
+                <ImageView
+                    android:id="@+id/img_incoming_sms"
+                    android:layout_marginLeft="@dimen/hai_muoi_dp"
+                    android:layout_marginBottom="@dimen/muoi_dp"
+                    android:layout_marginTop="@dimen/muoi_dp"
+                    android:layout_marginRight="@dimen/muoi_lam_dp"
+                    android:src="@drawable/ic_sms"
+                    android:layout_width="@dimen/hai_muoi_dp"
+                    android:layout_height="@dimen/hai_muoi_dp" />
+
+                <TextView
+                    android:textSize="@dimen/muoi_hai_sp"
+                    android:text="@string/incoming_sms"
+                    android:layout_toRightOf="@+id/img_incoming_sms"
+                    android:textColor="@color/color_title"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+                <Switch
+                    android:layout_marginBottom="@dimen/nam_dp"
+                    android:layout_marginTop="@dimen/nam_dp"
+                    android:layout_marginRight="@dimen/muoi_lam_dp"
+                    android:background="@drawable/custom_switch"
+                    android:thumb="@null"
+                    android:track="@null"
+                    android:id="@+id/sw_incoming_sms"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="@dimen/ba_lam_dp"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:background="@color/color_divide_content"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"></LinearLayout>
+
+            <TextView
+                android:layout_marginLeft="@dimen/hai_muoi_dp"
+                android:textColor="@color/color_top_text"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/muoi_hai_sp"
+                android:text="@string/flash_notification_app"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bon_lam_dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bon_lam_dp">
+
+                <ImageView
+                    android:id="@+id/img_enable_flash"
+                    android:layout_marginLeft="@dimen/hai_muoi_dp"
+                    android:layout_marginBottom="@dimen/muoi_dp"
+                    android:layout_marginTop="@dimen/muoi_dp"
+                    android:layout_marginRight="@dimen/muoi_lam_dp"
+                    android:src="@drawable/ic_enable_flash"
+                    android:layout_width="@dimen/hai_muoi_dp"
+                    android:layout_height="@dimen/hai_muoi_dp" />
+
+                <TextView
+                    android:id="@+id/tv_enable"
+                    android:textSize="@dimen/muoi_hai_sp"
+                    android:text="@string/enable_flash"
+                    android:layout_toRightOf="@+id/img_enable_flash"
+                    android:textColor="@color/color_title"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+                <Switch
+                    android:layout_marginBottom="@dimen/nam_dp"
+                    android:layout_marginTop="@dimen/nam_dp"
+                    android:layout_marginRight="@dimen/muoi_lam_dp"
+                    android:background="@drawable/custom_switch"
+                    android:thumb="@null"
+                    android:track="@null"
+                    android:id="@+id/sw_enable_flash"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="@dimen/ba_lam_dp"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:background="@color/color_divide_content"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"></LinearLayout>
+
+            <TextView
+                android:layout_marginLeft="@dimen/hai_muoi_dp"
+                android:textColor="@color/color_top_text"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/muoi_hai_sp"
+                android:text="@string/flash_notification_mode"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bon_lam_dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bon_lam_dp">
+
+                <ImageView
+                    android:id="@+id/img_normal_mode"
+                    android:layout_marginLeft="@dimen/hai_muoi_dp"
+                    android:layout_marginBottom="@dimen/muoi_dp"
+                    android:layout_marginTop="@dimen/muoi_dp"
+                    android:layout_marginRight="@dimen/muoi_lam_dp"
+                    android:src="@drawable/ic_normal"
+                    android:layout_width="@dimen/hai_muoi_dp"
+                    android:layout_height="@dimen/hai_muoi_dp" />
+
+                <TextView
+                    android:textSize="@dimen/muoi_hai_sp"
+                    android:text="@string/normal_mode"
+                    android:layout_toRightOf="@+id/img_normal_mode"
+                    android:textColor="@color/color_title"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+                <Switch
+                    android:layout_marginBottom="@dimen/nam_dp"
+                    android:layout_marginTop="@dimen/nam_dp"
+                    android:layout_marginRight="@dimen/muoi_lam_dp"
+                    android:background="@drawable/custom_switch"
+                    android:thumb="@null"
+                    android:track="@null"
+                    android:id="@+id/sw_normal_mode"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="@dimen/ba_lam_dp"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bon_lam_dp">
+
+                <ImageView
+                    android:id="@+id/img_vibrate_mode"
+                    android:layout_marginLeft="@dimen/hai_muoi_dp"
+                    android:layout_marginBottom="@dimen/muoi_dp"
+                    android:layout_marginTop="@dimen/muoi_dp"
+                    android:layout_marginRight="@dimen/muoi_lam_dp"
+                    android:src="@drawable/ic_vibrate"
+                    android:layout_width="@dimen/hai_muoi_dp"
+                    android:layout_height="@dimen/hai_muoi_dp" />
+
+                <TextView
+                    android:textSize="@dimen/muoi_hai_sp"
+                    android:text="@string/vibrate_mode"
+                    android:layout_toRightOf="@+id/img_vibrate_mode"
+                    android:textColor="@color/color_title"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+                <Switch
+                    android:layout_marginBottom="@dimen/nam_dp"
+                    android:layout_marginTop="@dimen/nam_dp"
+                    android:layout_marginRight="@dimen/muoi_lam_dp"
+                    android:background="@drawable/custom_switch"
+                    android:thumb="@null"
+                    android:track="@null"
+                    android:id="@+id/sw_vibrate_mode"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="@dimen/ba_lam_dp"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bon_lam_dp">
+
+                <ImageView
+                    android:id="@+id/img_silent_mode"
+                    android:layout_marginLeft="@dimen/hai_muoi_dp"
+                    android:layout_marginBottom="@dimen/muoi_dp"
+                    android:layout_marginTop="@dimen/muoi_dp"
+                    android:layout_marginRight="@dimen/muoi_lam_dp"
+                    android:src="@drawable/ic_silent"
+                    android:layout_width="@dimen/hai_muoi_dp"
+                    android:layout_height="@dimen/hai_muoi_dp" />
+
+                <TextView
+                    android:textSize="@dimen/muoi_hai_sp"
+                    android:text="@string/silent_mode"
+                    android:layout_toRightOf="@+id/img_silent_mode"
+                    android:textColor="@color/color_title"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+                <Switch
+                    android:layout_marginBottom="@dimen/nam_dp"
+                    android:layout_marginTop="@dimen/nam_dp"
+                    android:layout_marginRight="@dimen/muoi_lam_dp"
+                    android:background="@drawable/custom_switch"
+                    android:thumb="@null"
+                    android:track="@null"
+                    android:id="@+id/sw_silent_mode"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="@dimen/ba_lam_dp"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:background="@color/color_divide_content"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"></LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bon_lam_dp">
+
+                <ImageView
+                    android:id="@+id/img_disable_when_battery_below"
+                    android:layout_marginLeft="@dimen/hai_muoi_dp"
+                    android:layout_marginBottom="@dimen/muoi_dp"
+                    android:layout_marginTop="@dimen/muoi_dp"
+                    android:layout_marginRight="@dimen/muoi_lam_dp"
+                    android:src="@drawable/ic_battery"
+                    android:layout_width="@dimen/hai_muoi_dp"
+                    android:layout_height="@dimen/hai_muoi_dp" />
+
+                <TextView
+                    android:textSize="@dimen/muoi_hai_sp"
+                    android:text="@string/disable_when_battery_below"
+                    android:layout_toRightOf="@+id/img_disable_when_battery_below"
+                    android:textColor="@color/color_title"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+                <Switch
+                    android:layout_marginBottom="@dimen/nam_dp"
+                    android:layout_marginTop="@dimen/nam_dp"
+                    android:layout_marginRight="@dimen/muoi_lam_dp"
+                    android:background="@drawable/custom_switch"
+                    android:thumb="@null"
+                    android:track="@null"
+                    android:id="@+id/sw_disable_when_battery_below"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="@dimen/ba_lam_dp"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:background="@color/color_divide_content"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"></LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bon_lam_dp">
+
+                <ImageView
+                    android:id="@+id/img_do_not_disturb"
+                    android:layout_marginLeft="@dimen/hai_muoi_dp"
+                    android:layout_marginBottom="@dimen/muoi_dp"
+                    android:layout_marginTop="@dimen/muoi_dp"
+                    android:layout_marginRight="@dimen/muoi_lam_dp"
+                    android:src="@drawable/ic_do_not_disturb"
+                    android:layout_width="@dimen/hai_muoi_dp"
+                    android:layout_height="@dimen/hai_muoi_dp" />
+
+                <TextView
+                    android:textSize="@dimen/muoi_hai_sp"
+                    android:text="@string/do_not_disturb"
+                    android:layout_toRightOf="@+id/img_do_not_disturb"
+                    android:textColor="@color/color_title"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+                <Switch
+                    android:layout_marginBottom="@dimen/nam_dp"
+                    android:layout_marginTop="@dimen/nam_dp"
+                    android:layout_marginRight="@dimen/muoi_lam_dp"
+                    android:background="@drawable/custom_switch"
+                    android:thumb="@null"
+                    android:track="@null"
+                    android:id="@+id/sw_do_not_disturb"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="@dimen/ba_lam_dp"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bon_lam_dp">
+
+                <ImageView
+                    android:id="@+id/img_dnd_start"
+                    android:layout_marginLeft="@dimen/hai_muoi_dp"
+                    android:layout_marginBottom="@dimen/muoi_dp"
+                    android:layout_marginTop="@dimen/muoi_dp"
+                    android:layout_marginRight="@dimen/muoi_lam_dp"
+                    android:src="@drawable/ic_dnd_start"
+                    android:layout_width="@dimen/hai_muoi_dp"
+                    android:layout_height="@dimen/hai_muoi_dp" />
+
+                <TextView
+                    android:id="@+id/tv_dnd_start"
+                    android:textSize="@dimen/muoi_hai_sp"
+                    android:text="@string/dnd_start"
+                    android:layout_toRightOf="@+id/img_dnd_start"
+                    android:textColor="@color/color_title"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:layout_marginLeft="@dimen/muoi_dp"
+                    android:id="@+id/tv_hour_minute_start"
+                    android:textColor="@color/color_title"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/muoi_hai_sp"
+                    android:layout_toRightOf="@+id/tv_dnd_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+                <Switch
+                    android:layout_marginBottom="@dimen/nam_dp"
+                    android:layout_marginTop="@dimen/nam_dp"
+                    android:layout_marginRight="@dimen/muoi_lam_dp"
+                    android:background="@drawable/custom_switch"
+                    android:thumb="@null"
+                    android:track="@null"
+                    android:id="@+id/sw_dnd_start"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="@dimen/ba_lam_dp"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bon_lam_dp">
+
+                <ImageView
+                    android:id="@+id/img_dnd_end"
+                    android:layout_marginLeft="@dimen/hai_muoi_dp"
+                    android:layout_marginBottom="@dimen/muoi_dp"
+                    android:layout_marginTop="@dimen/muoi_dp"
+                    android:layout_marginRight="@dimen/muoi_lam_dp"
+                    android:src="@drawable/ic_dnd_start"
+                    android:layout_width="@dimen/hai_muoi_dp"
+                    android:layout_height="@dimen/hai_muoi_dp" />
+
+                <TextView
+                    android:id="@+id/tv_dnd_end"
+                    android:textSize="@dimen/muoi_hai_sp"
+                    android:text="@string/dnd_end"
+                    android:layout_toRightOf="@+id/img_dnd_end"
+                    android:textColor="@color/color_title"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:layout_marginLeft="@dimen/muoi_dp"
+                    android:id="@+id/tv_hour_minute_end"
+                    android:textColor="@color/color_title"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/muoi_hai_sp"
+                    android:layout_toRightOf="@+id/tv_dnd_end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+                <Switch
+                    android:layout_marginBottom="@dimen/nam_dp"
+                    android:layout_marginTop="@dimen/nam_dp"
+                    android:layout_marginRight="@dimen/muoi_lam_dp"
+                    android:background="@drawable/custom_switch"
+                    android:thumb="@null"
+                    android:track="@null"
+                    android:id="@+id/sw_dnd_end"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="@dimen/ba_lam_dp"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:background="@color/color_divide_content"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"></LinearLayout>
+
+            <RelativeLayout
+                android:paddingLeft="@dimen/hai_muoi_dp"
+                android:paddingRight="@dimen/hai_muoi_dp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/nam_muoi_dp">
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/muoi_hai_sp"
+                    android:textColor="@color/color_title"
+                    android:text="@string/on_length"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/tv_on_length"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/muoi_hai_sp"
+                    android:textColor="@color/color_title"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <SeekBar
+                android:layout_marginLeft="@dimen/muoi_lam_dp"
+                android:layout_marginRight="@dimen/muoi_lam_dp"
+                android:id="@+id/sb_onlength"
+                android:theme="@style/AppThemeSeekbar"
+                android:thumb="@drawable/custom_thumb"
+                android:min="0"
+                android:max="1000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:paddingLeft="@dimen/hai_muoi_dp"
+                android:paddingRight="@dimen/hai_muoi_dp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/nam_muoi_dp">
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/muoi_hai_sp"
+                    android:textColor="@color/color_title"
+                    android:text="@string/off_length"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/tv_off_length"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/muoi_hai_sp"
+                    android:textColor="@color/color_title"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <SeekBar
+                android:layout_marginLeft="@dimen/muoi_lam_dp"
+                android:layout_marginRight="@dimen/muoi_lam_dp"
+                android:id="@+id/sb_off_length"
+                android:theme="@style/AppThemeSeekbar"
+                android:thumb="@drawable/custom_thumb"
+                android:min="0"
+                android:max="1000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:paddingLeft="@dimen/hai_muoi_dp"
+                android:paddingRight="@dimen/hai_muoi_dp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/nam_muoi_dp">
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/muoi_hai_sp"
+                    android:textColor="@color/color_title"
+                    android:text="@string/blink_time_on_sms"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/tv_blink_time"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/muoi_hai_sp"
+                    android:textColor="@color/color_title"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <SeekBar
+                android:layout_marginLeft="@dimen/muoi_lam_dp"
+                android:layout_marginRight="@dimen/muoi_lam_dp"
+                android:id="@+id/sb_blink_time"
+                android:theme="@style/AppThemeSeekbar"
+                android:thumb="@drawable/custom_thumb"
+                android:min="0"
+                android:max="50"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/muoi_lam_dp"
+                android:background="@color/color_divide_content"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"></LinearLayout>
+            
+            <LinearLayout
+                android:padding="@dimen/hai_muoi_dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/mot_tram_dp">
+
+                <Button
+                    android:background="@drawable/button_shape"
+                    android:id="@+id/btn_test_start"
+                    android:textColor="@color/color_text_btn"
+                    android:textSize="@dimen/muoi_hai_sp"
+                    android:text="@string/test_start"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+                <Button
+                    android:background="@drawable/button_shape"
+                    android:id="@+id/btn_test_stop"
+                    android:layout_marginLeft="@dimen/muoi_lam_dp"
+                    android:textColor="@color/color_text_btn"
+                    android:textSize="@dimen/muoi_hai_sp"
+                    android:text="@string/test_stop"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

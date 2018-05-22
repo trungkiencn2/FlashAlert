@@ -1,0 +1,106 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Flash alerts</string>
+    <string name="incoming_call">Incoming call</string>
+    <string name="incoming_sms">Incoming sms</string>
+    <string name="flash_notification_app">Flash notification app</string>
+    <string name="enable_flash">Enable flash alerts for other app</string>
+    <string name="flash_notification_mode">Flash notification mode</string>
+    <string name="normal_mode">Normal mode</string>
+    <string name="vibrate_mode">Vibrate mode</string>
+    <string name="silent_mode">Silent mode</string>
+    <string name="disable_when_battery_below">Disable when battery below</string>
+    <string name="do_not_disturb">Do not disturb (DND mode)</string>
+    <string name="dnd_start">DND Start</string>
+    <string name="dnd_end">DND End</string>
+    <string name="on_length">On length</string>
+    <string name="off_length">Off length</string>
+    <string name="blink_time_on_sms">Blink time on SMS</string>
+    <string name="test_start">Test Start</string>
+    <string name="test_stop">Test Stop</string>
+    <string name="battery_percent">Battery percent</string>
+    <string name="threshold">Threshold</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="time"> Time</string>
+    <string name="flash_time_error">Flash time must be greater than 0. Please reinstall!</string>
+    <string name="please_reinstall_time">Please reinstall time!</string>
+    <string name="notification_access">Notification access</string>
+
+
+    <!-- Pattern for the v1 month and year string (localised) -->
+    <string name="mdtp_date_v1_monthyear">MMMM yyyy</string>
+    <!-- Pattern for the v2 day month and year string (localised) -->
+    <string name="mdtp_date_v2_daymonthyear">EEE, MMM dd</string>
+
+    <!-- Label for date or time [CHAR LIMIT=30] -->
+    <string name="mdtp_done_label">Done</string>
+    <string name="mdtp_ok">@android:string/ok</string>
+    <string name="mdtp_cancel">@android:string/cancel</string>
+    <!--
+         Content description for the hour selector in the time picker, which displays
+         selectable hours of the day along the inside edge of a circle, as in an analog clock.
+         [CHAR LIMIT=50]
+    -->
+    <string name="mdtp_hour_picker_description">Hours circular slider</string>
+    <!--
+         Content description for the minute selector in the time picker, which displays
+         selectable five-minute intervals along the inside edge of a circle, as in an analog clock.
+         [CHAR LIMIT=50]
+    -->
+    <string name="mdtp_minute_picker_description">Minutes circular slider</string>
+    <!--
+         Content description for the second selector in the time picker, which displays
+         selectable five-second intervals along the inside edge of a circle, as in an analog clock.
+         [CHAR LIMIT=50]
+    -->
+    <string name="mdtp_second_picker_description">Seconds circular slider</string>
+    <!-- Accessibility announcement for hour circular picker [CHAR LIMIT=NONE] -->
+    <string name="mdtp_select_hours">Select hours</string>
+    <!-- Accessibility announcement for minute circular picker [CHAR LIMIT=NONE] -->
+    <string name="mdtp_select_minutes">Select minutes</string>
+    <!-- Accessibility announcement for second circular picker [CHAR LIMIT=NONE] -->
+    <string name="mdtp_select_seconds">Select seconds</string>
+
+    <string name="mdtp_date">Date</string>
+    <string name="mdtp_time">Time</string>
+
+    <!--
+        Content description for the month and day selector in the date picker, which displays
+        a selectable grid of days laid out by month.
+        [CHAR LIMIT=50]
+     -->
+    <string name="mdtp_day_picker_description">Month grid of days</string>
+    <!--
+        Content description for the year selector in the date picker, which displays
+        a scrolling, vertical list of years.
+        [CHAR LIMIT=50]
+     -->
+    <string name="mdtp_year_picker_description">Year list</string>
+    <!-- Accessibility announcement for the day picker [CHAR LIMIT=NONE] -->
+    <string name="mdtp_select_day">Select month and day</string>
+    <!-- Accessibility announcement for the year picker [CHAR LIMIT=NONE] -->
+    <string name="mdtp_select_year">Select year</string>
+    <!-- Accessibility description for the item that is currently selected. -->
+    <string name="mdtp_item_is_selected"><xliff:g example="2013" id="item">%1$s</xliff:g> selected</string>
+    <!-- Accessibility announcement when a number that had been typed in is deleted [CHAR_LIMIT=NONE] -->
+    <string name="mdtp_deleted_key"><xliff:g example="4" id="key">%1$s</xliff:g> deleted</string>
+
+    <!-- DO NOT TRANSLATE -->
+    <string name="mdtp_time_placeholder" translatable="false">00</string>
+    <!-- DO NOT TRANSLATE -->
+    <string name="mdtp_time_separator" translatable="false">:</string>
+
+    <!-- DO NOT TRANSLATE -->
+    <string name="mdtp_radial_numbers_typeface" translatable="false">sans-serif</string>
+    <!-- DO NOT TRANSLATE -->
+    <string name="mdtp_sans_serif" translatable="false">sans-serif</string>
+
+    <!-- DO NOT TRANSLATE -->
+    <string name="mdtp_day_of_week_label_typeface" translatable="false">sans-serif</string>
+    <string name="mdtp_button_typeface" translatable="false">Roboto-Medium</string>
+    <string name="mdtp_previous_month_arrow" translatable="false"><![CDATA[\u276E]]></string>
+    <string name="mdtp_next_month_arrow" translatable="false"><![CDATA[\u276F]]></string>
+
+    <string name="mdtp_am">am</string>
+    <string name="mdtp_pm">pm</string>
+</resources>

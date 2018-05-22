@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:gravity="center"
+        android:paddingRight="@dimen/muoi_lam_dp"
+        android:paddingLeft="@dimen/hai_muoi_dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bay_muoi_dp">
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/img_app_item"
+            android:layout_width="@dimen/bon_muoi_dp"
+            android:layout_height="@dimen/bon_muoi_dp" />
+
+        <TextView
+            android:layout_marginLeft="@dimen/muoi_lam_dp"
+            android:id="@+id/tv_app_item"
+            android:textColor="#333333"
+            android:textSize="@dimen/muoi_hai_sp"
+            android:gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="match_parent" />
+        
+        <Switch
+            android:background="@drawable/custom_switch_notify"
+            android:thumb="@null"
+            android:track="@null"
+            android:layout_marginLeft="@dimen/muoi_dp"
+            android:id="@+id/sw_app_item"
+            android:layout_width="@dimen/bon_muoi_dp"
+            android:layout_height="@dimen/bon_muoi_dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

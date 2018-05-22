@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/color_top_text"/>
+            <size
+                android:width="@dimen/muoi_lam_dp"
+                android:height="@dimen/muoi_lam_dp"/>
+        </shape>
+    </item>
+</layer-list>
